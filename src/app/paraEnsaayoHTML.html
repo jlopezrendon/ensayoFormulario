@@ -1,0 +1,15 @@
+<form  (ngSubmit)= "guardar()" autocomplete="off" [formGroup]="miFormulario">
+   <div>
+      <label for="pai_idDivisiones">Divisiones políticas</label>
+      <input type="text"
+         formControlName="pai_idDivisiones" id="pai_idDivisiones" name="pai_idDivisiones">
+   </div>
+   <fieldset><legend>Datos según el DANE</legend>
+      <label for="pai_identificacion">Código del país</label>
+      <input type="text"
+            formControlName="pai_identificacion" id="pai_identificacion" name="pai_identificacion">
+      <label for="pai_nombre">Nombre del país</label>
+      <input type="text"
+            formControlName="pai_nombre" id="pai_nombre" name="pai_nombre">
+   </fieldset>
+</form>
